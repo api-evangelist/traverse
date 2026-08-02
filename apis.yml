@@ -1,22 +1,67 @@
 aid: traverse
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/traverse.png
 name: Traverse
-description: Traverse is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Traverse is a San Francisco data research lab, founded in 2025 by Lance Yan and
+  backed by Y Combinator (W26) along with angel investors from OpenAI, Google
+  DeepMind, Anthropic, and Meta. Traverse partners with frontier AI labs to solve
+  "non-verifiable" work: the ambiguous, taste-dependent, long-horizon tasks in
+  domains like law, healthcare, sales, and writing where reinforcement learning
+  lacks the clean deterministic feedback loops it has in math and coding. The lab
+  captures real human expert behavior in highly controlled settings and turns
+  judgment, taste, and reasoning into high-fidelity training environments for
+  frontier models. As of mid-2026 Traverse is an early-stage research lab with no
+  public API, developer platform, SDKs, or product documentation — its public
+  surface is a manifesto-style website, a blog, careers pages, and a contact CTA
+  for prospective lab partners.
 url: https://raw.githubusercontent.com/api-evangelist/traverse/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - y-combinator
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: portfolio-lead-no-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Artificial Intelligence
+- Machine Learning
+- Training Data
+- Data Labeling
+- Research Lab
+- Frontier Models
+- Reinforcement Learning
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/traverse-domain-security.yml
+- type: Website
+  url: https://traverse.so/
+- type: Blog
+  url: https://traverse.so/blog
+- type: GitHubOrganization
+  url: https://github.com/traverse-so
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
